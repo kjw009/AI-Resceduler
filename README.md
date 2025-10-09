@@ -1,7 +1,7 @@
 # Project-Miraage
 Project Description:
 
-"Multi-Platform AI Rescheduler: Optimizing Your Time Across Calendars
+Multi-Platform AI Rescheduler: Optimizing Your Time Across Calendars
 
 This project develops an intelligent, AI-powered rescheduler that seamlessly integrates with multiple calendar platforms, including Google Calendar, Microsoft Teams Calendar, and potentially others in the future. It aims to unify your scheduling experience, automatically organizing tasks from Google Tasks and other task management systems around your events and commitments. By leveraging advanced AI algorithms, the rescheduler prioritizes tasks, intelligently identifies optimal time slots, and dynamically adjusts your schedule to maximize productivity and minimize context switching. This solution addresses the challenge of fragmented scheduling by providing a centralized, intelligent platform for managing your time across diverse calendar ecosystems."
 
