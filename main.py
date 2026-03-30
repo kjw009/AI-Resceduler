@@ -1,12 +1,12 @@
-from src.grayfia.client import Grayfia
+from src.grayfia.client import authenticate, get_events, get_tasks
 from src.grayfia.normalizer import normalize_all
 
 if __name__ == "__main__":
-    grayfia = Grayfia()
+    creds = authenticate()
 
-    if grayfia.creds:
-        events = grayfia.get_events()
-        tasks = grayfia.get_tasks()
+    if creds:
+        events = get_events(creds)
+        tasks = get_tasks(creds)
 
         schedule = normalize_all(events, tasks)
 
