@@ -1,5 +1,5 @@
 # Grayfia Class
-from Grayfia import Grayfia
+from src.grayfia.client import Grayfia
 
 if __name__ == "__main__":
     grayfia = Grayfia()
