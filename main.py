@@ -1,18 +1,19 @@
-# Grayfia Class
 from src.grayfia.client import Grayfia
+from src.grayfia.normalizer import normalize_all
 
 if __name__ == "__main__":
     grayfia = Grayfia()
 
     if grayfia.creds:
         events = grayfia.get_events()
-        all_tasks = grayfia.get_tasks()
+        tasks = grayfia.get_tasks()
 
-        for task in all_tasks:
-            print("---Tasks---")
-            tasklist  =  task.get('task_list_title')
-            task_name = task.get('title')
-            print(f"Tasklist: {tasklist}\n Task Name: {task_name}")
-            
+        schedule = normalize_all(events, tasks)
+
+        for item in schedule:
+            print(f"[{item['type'].upper()}] {item['title']}")
+            print(f"  Start: {item['start']}  End: {item['end']}")
+            print(f"  Status: {item['status']}  Source: {item['source']}")
+            print()
     else:
         print("Authentication Failed")
